@@ -96,10 +96,10 @@ set autoindent smartindent
  endfunction
 
  "disable modeline.
-" set modelines=0
+"set modelines=0
 " set nomodeline
 
- autocmd MyAutoCmd BufRead,BufWritePost *.txt setlocal modelines=5 modeline
+" autocmd MyAutoCmd BufRead,BufWritePost *.txt setlocal modelines=5 modeline
 
 " Use clipboard register.
 
@@ -154,6 +154,8 @@ autocmd MyAutoCmd TextChangedI,TextChanged *
           " Use FoldCCtext().
           set foldtext=FoldCCtext()
 		endif
+endfunction
+
 " }}}
 "---------------------------------------------------------------------------
 "  File System:
